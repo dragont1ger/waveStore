@@ -17,6 +17,7 @@
   - 회원 관리 (회원 가입, 로그인, 프로필 관리)
   - 소셜 로그인 (Google, Kakao)
 
+
 ## 📌 기술 스택 (Tech Stack)
 
 - **프론트엔드**: HTML, CSS, JavaScript, Thymeleaf
@@ -24,6 +25,7 @@
 - **데이터베이스**: MySQL / Oracle
 - **보안**: JWT (JSON Web Token), OAuth2 (소셜 로그인), BCrypt 암호화
 - **빌드 도구**: Gradle
+
 
 
 ## 📌 데이터 흐름 (Data Flow)
@@ -35,6 +37,7 @@ DB에서 데이터 반환 후, 응답 생성 → Controller에서 JSON 형태로
                      ↳ [Config] (Security, Password Encoding, JWT)
 
 
+
 ## ✅ 기대 효과 (Expected Benefits)
 - 안전한 중고 거래 환경 제공 (소셜 로그인, 결제 시스템 도입)
 - 사용자 경험(UX) 개선을 위한 실시간 채팅 및 검색 기능 제공
@@ -43,10 +46,12 @@ DB에서 데이터 반환 후, 응답 생성 → Controller에서 JSON 형태로
 - RESTful API를 활용한 백엔드 & 프론트엔드 통신
 
 
+
 ## 📌 향후 개선 사항 (Future Improvements)
 - 회원 등급 시스템 도입 및 포인트 적립 기능
 - 모바일 앱 개발
 - 탈퇴 회원 데이터 자동 백업 및 복구 기능 추가 또는 일정 기간 후 완전 삭제
+
 
 
 ## 📌 프로젝트 구조 (Project Structure)
