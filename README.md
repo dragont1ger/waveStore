@@ -40,7 +40,7 @@ DB에서 데이터 반환 후, 응답 생성 → Controller에서 JSON 형태로
 
 ## ✅ 기대 효과 (Expected Benefits)
 - 안전한 중고 거래 환경 제공 (소셜 로그인, 결제 시스템 도입)
-- 사용자 경험(UX) 개선을 위한 실시간 채팅 및 검색 기능 제공
+- 사용자 경험(UX) 개선을 위한 채팅 및 검색 기능 제공
 - 확장성 고려 (추후 모바일 앱 연동 및 기능 확장 가능)
 - MVC(Model-View-Controller) 패턴 기반 설계
 - RESTful API를 활용한 백엔드 & 프론트엔드 통신
@@ -59,7 +59,7 @@ DB에서 데이터 반환 후, 응답 생성 → Controller에서 JSON 형태로
 ```plaintext
 project-wave
 ├── 📂 src/main/java/org/example/store
-│     ├── 📂 chat              # 실시간 채팅 관련 로직
+│     ├── 📂 chat              # 채팅 관련 로직
 │     ├── 📂 chatRoom          # 채팅방 관리 기능
 │     ├── 📂 follow            # 팔로우 기능
 │     ├── 📂 like_product      # 상품 찜하기 기능
