@@ -25,6 +25,30 @@
 - **보안**: JWT (JSON Web Token), OAuth2 (소셜 로그인), BCrypt 암호화
 - **빌드 도구**: Gradle
 
+
+## 📌 데이터 흐름 (Data Flow)
+사용자가 로그인 요청을 보냄 → Controller가 요청을 받음
+Service 계층이 비즈니스 로직 처리 → Repository에서 DB 조회
+DB에서 데이터 반환 후, 응답 생성 → Controller에서 JSON 형태로 반환
+
+[Client] -> [Controller] -> [DTO] -> [Service] -> [Entity] -> [Repository] -> [Database]
+                     ↳ [Config] (Security, Password Encoding, JWT)
+
+
+## ✅ 기대 효과 (Expected Benefits)
+- 안전한 중고 거래 환경 제공 (소셜 로그인, 결제 시스템 도입)
+- 사용자 경험(UX) 개선을 위한 실시간 채팅 및 검색 기능 제공
+- 확장성 고려 (추후 모바일 앱 연동 및 기능 확장 가능)
+- MVC(Model-View-Controller) 패턴 기반 설계
+- RESTful API를 활용한 백엔드 & 프론트엔드 통신
+
+
+## 📌 향후 개선 사항 (Future Improvements)
+- 회원 등급 시스템 도입 및 포인트 적립 기능
+- 모바일 앱 개발
+- 탈퇴 회원 데이터 자동 백업 및 복구 기능 추가 또는 일정 기간 후 완전 삭제
+
+
 ## 📌 프로젝트 구조 (Project Structure)
 
 ```plaintext
@@ -50,23 +74,5 @@ project-wave
 ├── 📄 build.gradle             # 프로젝트 빌드 설정
 ├── 📄 README.md                # 프로젝트 문서
 
-## 📌 데이터 흐름 (Data Flow)
-사용자가 로그인 요청을 보냄 → Controller가 요청을 받음
-Service 계층이 비즈니스 로직 처리 → Repository에서 DB 조회
-DB에서 데이터 반환 후, 응답 생성 → Controller에서 JSON 형태로 반환
-
-[Client] -> [Controller] -> [DTO] -> [Service] -> [Entity] -> [Repository] -> [Database]
-                     ↳ [Config] (Security, Password Encoding, JWT)
-
-## ✅ 기대 효과 (Expected Benefits)
-- 안전한 중고 거래 환경 제공 (소셜 로그인, 결제 시스템 도입)
-- 사용자 경험(UX) 개선을 위한 실시간 채팅 및 검색 기능 제공
-- 확장성 고려 (추후 모바일 앱 연동 및 기능 확장 가능)
-- MVC(Model-View-Controller) 패턴 기반 설계
-- RESTful API를 활용한 백엔드 & 프론트엔드 통신
 
 
-## 📌 향후 개선 사항 (Future Improvements)
-- 회원 등급 시스템 도입 및 포인트 적립 기능
-- 모바일 앱 개발
-- 탈퇴 회원 데이터 자동 백업 및 복구 기능 추가 또는 일정 기간 후 완전 삭제
