@@ -45,15 +45,6 @@ DB에서 데이터 반환 후, 응답 생성 → Controller에서 JSON 형태로
 - MVC(Model-View-Controller) 패턴 기반 설계
 - RESTful API를 활용한 백엔드 & 프론트엔드 통신
 
-
-
-## 📌 향후 개선 사항 (Future Improvements)
-- 회원 등급 시스템 도입 및 포인트 적립 기능
-- 모바일 앱 개발
-- 탈퇴 회원 데이터 자동 백업 및 복구 기능 추가 또는 일정 기간 후 완전 삭제
-
-
-
 ## 📌 프로젝트 구조 (Project Structure)
 
 ```plaintext
@@ -79,5 +70,13 @@ project-wave
 ├── 📄 build.gradle             # 프로젝트 빌드 설정
 ├── 📄 README.md                # 프로젝트 문서
 
+```
+
+## 구현 결과
+![메인](https://github.com/user-attachments/assets/5784f8bc-0be5-450b-83f5-1834d7a2aacf)
 
 
+## 📌 향후 개선 사항 (Future Improvements)
+- 회원 등급 시스템 도입 및 포인트 적립 기능
+- 모바일 앱 개발
+- 탈퇴 회원 데이터 자동 백업 및 복구 기능 추가 또는 일정 기간 후 완전 삭제
