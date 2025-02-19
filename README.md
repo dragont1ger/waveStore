@@ -26,6 +26,94 @@
 - **보안**: JWT (JSON Web Token), OAuth2 (소셜 로그인), BCrypt 암호화
 - **빌드 도구**: Gradle
 
+## 🚀  Stacks
+
+---
+
+<aside>
+⚙️ **Spring Boot (JPA)**
+
+</aside>
+
+<aside>
+<img src="/icons/shield_blue.svg" alt="/icons/shield_blue.svg" width="40px" /> **Spring Security**
+
+</aside>
+
+<aside>
+<img src="/icons/leaf_green.svg" alt="/icons/leaf_green.svg" width="40px" /> **Thymeleaf**
+
+</aside>
+
+<aside>
+<img src="/icons/key_brown.svg" alt="/icons/key_brown.svg" width="40px" /> **OAuth2**
+
+</aside>
+
+<aside>
+<img src="attachment:08416e9a-2107-43fb-9c9e-8ef0917e3918:다운로드.png" alt="attachment:08416e9a-2107-43fb-9c9e-8ef0917e3918:다운로드.png" width="40px" /> **DBeaver (Oracle)**
+
+</aside>
+
+<aside>
+<img src="attachment:246e5bf0-1549-49d0-af01-05da5d24a10e:pngwing.com_(3).png" alt="attachment:246e5bf0-1549-49d0-af01-05da5d24a10e:pngwing.com_(3).png" width="40px" /> **HTML (AJAX)**
+
+</aside>
+
+<aside>
+<img src="attachment:5e68322b-c560-4299-9d9c-1b80fc230e0e:pngwing.com_(1).png" alt="attachment:5e68322b-c560-4299-9d9c-1b80fc230e0e:pngwing.com_(1).png" width="40px" /> **CSS(SCSS)**
+
+</aside>
+
+<aside>
+<img src="attachment:3d851fa7-8bc0-444a-8eef-95626e23f297:pngwing.com_(2).png" alt="attachment:3d851fa7-8bc0-444a-8eef-95626e23f297:pngwing.com_(2).png" width="40px" /> **JavaScript**
+
+</aside>
+
+## 👥  Collaboration
+
+---
+
+<aside>
+🫂 [멤버](https://www.notion.so/19dc493b4f0481a5983bf9fbefd5ee01?pvs=21)
+
+</aside>
+
+<aside>
+<img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566899596/noticon/slhw4nu8hybreryigopq.png" alt="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566899596/noticon/slhw4nu8hybreryigopq.png" width="40px" /> [GitHub](https://github.com/leehansae1/store)
+
+</aside>
+
+<aside>
+<img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/notion_logo_icon_145025.png" alt="https://cdn.icon-icons.com/icons2/2389/PNG/512/notion_logo_icon_145025.png" width="40px" /> **Notion**
+
+</aside>
+
+<aside>
+📌 [컨벤션](https://www.notion.so/19dc493b4f04817194a1dbf108a329ee?pvs=21)
+
+</aside>
+
+<aside>
+📂 [문서](https://www.notion.so/19dc493b4f0481d1817fc9a0d5fa912b?pvs=21)
+
+</aside>
+
+<aside>
+📜 [회의록](https://www.notion.so/19dc493b4f0481fab8f4e7115545dd1e?pvs=21)
+
+</aside>
+
+- 
+    
+    [멤버](https://www.notion.so/19dc493b4f0481a5983bf9fbefd5ee01?pvs=21)
+    
+    [컨벤션](https://www.notion.so/19dc493b4f04817194a1dbf108a329ee?pvs=21)
+    
+    [회의록](https://www.notion.so/19dc493b4f0481fab8f4e7115545dd1e?pvs=21)
+    
+    [문서](https://www.notion.so/19dc493b4f0481d1817fc9a0d5fa912b?pvs=21)
+
 
 
 ## 📌 데이터 흐름 (Data Flow)
