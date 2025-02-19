@@ -4,6 +4,12 @@
 
 **Project Wave**는 사용자들이 안전하고 편리하게 중고 거래를 할 수 있는 웹 플랫폼입니다. 판매자와 구매자는 실시간으로 상품 정보를 확인하고, 원활한 거래를 진행할 수 있습니다. 소셜 로그인 및 안전한 결제 시스템을 통해 신뢰 기반의 거래 환경을 제공합니다.
 
+### **📆**프로젝트 기간
+
+---
+
+2025.01.16 ~ 2025.02.20
+
 - **주요 목표**:
   - 안전하고 신뢰성 있는 중고 거래 환경 제공
   - 채팅 및 원활한 상품 검색 기능 제공
@@ -70,116 +76,6 @@ project-wave
 ├── 📄 README.md                # 프로젝트 문서
 
 ```
-### 데이터베이스 설계 (Database Design)
-
----
-
-- PRODUCT
-    - 사용자가 등록한 **상품 정보**를 저장하는 테이블
-    - 컬럼 :
-        - `product_id` (PK) - 상품 고유 ID
-        - `seller_id` (FK) - 판매자 ID (회원 테이블과 연결)
-        - `title` - 상품 제목
-        - `description` - 상품 설명
-        - `price` - 상품 가격
-        - `category` - 상품 카테고리
-        - `created_at` - 상품 등록 시간
-        - `status` - 상품 상태 (판매중, 예약중, 판매완료 등)
-- SEARCH_PRODUCT
-    - 상품의 검색을 도와주는 **태그 및 카테고리 데이터**를 저장하는 테이블.
-    - 컬럼:
-        - `search_id` (PK) - 검색 태그 ID
-        - `product_id` (FK) - 상품 ID (PRODUCT 테이블과 연결)
-        - `tag_name` - 태그 이름
-        - `category` - 카테고리 이름
-- IMAGE
-    - 상품과 관련된 **이미지 정보를 저장**하는 테이블.
-    - 컬럼:
-        - `image_id` (PK) - 이미지 ID
-        - `product_id` (FK) - 상품 ID (PRODUCT 테이블과 연결)
-        - `image_url` - 이미지 파일 경로
-        - `created_at` - 업로드된 시간
-- LIKE_PRODUCT
-    - 사용자가 특정 상품을 찜(좋아요)한 데이터를 저장하는 테이블.
-    - 컬럼:
-        - `like_id` (PK) - 찜한 기록 ID
-        - `member_id` (FK) - 회원 ID (MEMBER 테이블과 연결)
-        - `product_id` (FK) - 찜한 상품 ID
-        - `created_at` - 찜한 시간
-- MEMVER_REVIEW
-    - 사용자(판매자/구매자)의 **리뷰를 관리**하는 테이블.
-    - 컬럼:
-        - `review_id` (PK) - 리뷰 ID
-        - `member_id` (FK) - 리뷰 작성자 ID
-        - `target_id` (FK) - 리뷰 대상자 ID
-        - `rating` - 평점 (1~5)
-        - `comment` - 후기 내용
-        - `created_at` - 작성 시간
-- MEMBER
-    - 프로젝트의 **사용자(회원) 정보**를 저장하는 테이블.
-    - 컬럼:
-        - `userId` (PK) - 회원 고유 ID
-        - `userPw` - 암호화된 비밀번호
-        - `userName` - 사용자 이름
-        - `userEmail` - 이메일 주소
-        - `address` - 사용자(직거래 ) 주소
-        - `tel` - 전화번호
-        - `introduce` - 사용자 아이디
-        - `regDate` - 가입일
-        - `status` - 계정 상태 (활성, 비활성, 탈퇴 등)
-        - `roll` - 일반 회원 계정, 관리자 계정
-        - `userProfile` - 사용자 프로필 이미지
-- CHATROOM
-    - 사용자가 거래를 위해 생성한 **1:1 채팅방 정보**를 저장하는 테이블.
-    - 주요 컬럼:
-        - `room_id` (PK) - 채팅방 ID
-        - `buyer_id` (FK) - 구매자 ID
-        - `seller_id` (FK) - 판매자 ID
-        - `product_id` (FK) - 채팅이 발생한 상품 ID
-        - `created_at` - 채팅방 생성 시간
-- CHAT
-    - 채팅방에서 발생한 **메시지를 저장하는 테이블.**
-    - 주요 컬럼:
-        - `chat_id` (PK) - 메시지 ID
-        - `room_id` (FK) - 채팅방 ID (CHATROOM 테이블과 연결)
-        - `sender_id` (FK) - 메시지 전송한 사용자 ID
-        - `message` - 채팅 내용
-        - `sent_at` - 메시지 보낸 시간
-- FOLLOW
-    - 사용자가 **다른 사용자를 팔로우**하는 정보를 저장하는 테이블.
-    - 주요 컬럼:
-        - `follow_id` (PK) - 구독 ID
-        - `follower_id` (FK) - 팔로우한 사용자 ID
-        - `following_id` (FK) - 팔로우 대상 사용자 ID
-        - `created_at` - 팔로우한 시간
-- FAQ
-    - 사용자의 **고객 문의 데이터를 저장**하는 테이블.
-    - 주요 컬럼:
-        - `faq_id` (PK) - 문의 ID
-        - `member_id` (FK) - 문의 작성자 ID
-        - `question` - 질문 내용
-        - `answer` - 답변 내용
-        - `created_at` - 질문 작성 시간
-        - `answered_at` - 답변한 시간
-- BUY_HISTORY
-    - 사용자의 **구매 내역을 저장하는 테이블.**
-    - 주요 컬럼:
-        - `history_id` (PK) - 구매 내역 ID
-        - `member_id` (FK) - 구매자 ID
-        - `product_id` (FK) - 구매한 상품 ID
-        - `payment_id` (FK) - 결제 ID (결제 테이블과 연결 가능)
-        - `status` - 구매 상태 (결제완료, 배송중, 거래완료 등)
-        - `created_at` - 구매 시간
-- BUY
-    - 실시간 결제 및 거래 상태를 관리하는 **구매 프로세스 테이블.**
-    - 주요 컬럼:
-        - `buy_id` (PK) - 구매 ID
-        - `buyer_id` (FK) - 구매자 ID
-        - `seller_id` (FK) - 판매자 ID
-        - `product_id` (FK) - 구매한 상품 ID
-        - `price` - 구매 가격
-        - `status` - 구매 상태 (결제완료, 배송중, 거래완료 등)
-        - `created_at` - 거래 시작 시간
 
 ## 🎯 구현 결과
 메인 페이지
