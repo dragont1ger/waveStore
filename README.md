@@ -145,8 +145,9 @@ project-wave
 3. 탈퇴 회원 데이터 자동 백업 및 복구 기능 추가 또는 일정 기간 후 완전 삭제
     - 탈퇴한 회원의 데이터를 일정 기간 동안 자동 백업하고, 그 기간 이후에는 데이터 삭제.
     - 데이터 보안과 개인정보 보호를 고려한 방안이 필요하며, 복구 시스템이 필요할 수 있음.
+
   
-📌 개발 환경 설정 (Setup Instructions)
+## 📌 개발 환경 설정 (Setup Instructions)
 프로젝트 클론 (Clone the repository)
 ```plaintext
 git clone https://github.com/dragont1ger/waveStore.git
