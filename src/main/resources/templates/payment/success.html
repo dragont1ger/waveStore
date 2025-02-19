@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="icon" href="https://static.toss.im/icons/png/4x/icon-toss-logo.png"/>
-    <link rel="stylesheet" type="text/css" href="/toss.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/toss.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>결제 성공</title>
@@ -91,7 +91,7 @@
                     success: 1,
                 }
                 fetch("/payment/resultSave", {
-                    method: "post",
+                    method: "POST",
                     headers: {
                         "Content-Type": "application/json"
                     },
@@ -110,8 +110,10 @@
             }
         })
         .catch((err) => {
-            // TODO: 결제 승인에 실패했을 경우 UI 처리 로직을 구현하세요.
-            window.location.href = `/payment/fail.html?message=${err.message}&code=${err.code}`;
+            console.log(err);
+            if (err.message !== ""){
+                window.location.href = `/payment/fail.html?message=${err.message}&code=${err.code}`;
+            } else window.location.href = `/payment/fail.html?message=이미결제되었습니다&code=${err.code}`;
         });
 
     const paymentKeyElement = document.querySelector("#paymentKey");

@@ -1,6 +1,8 @@
-/*toss css*/
+
 body {
-  background-color: #e8f3ff;
+  background: linear-gradient(180deg, #e0f7fa, #ffffff);
+  width: 100%;
+  height: 100%;
 }
 .p {
   padding: 0;
