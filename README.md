@@ -145,3 +145,23 @@ project-wave
 3. 탈퇴 회원 데이터 자동 백업 및 복구 기능 추가 또는 일정 기간 후 완전 삭제
     - 탈퇴한 회원의 데이터를 일정 기간 동안 자동 백업하고, 그 기간 이후에는 데이터 삭제.
     - 데이터 보안과 개인정보 보호를 고려한 방안이 필요하며, 복구 시스템이 필요할 수 있음.
+  
+📌 개발 환경 설정 (Setup Instructions)
+프로젝트 클론 (Clone the repository)
+
+git clone https://github.com/dragont1ger/waveStore.git
+빌드 도구 설정
+build.gradle 파일에 설정된 Gradle을 사용하여 의존성 패키지를 설치합니다.
+
+
+./gradlew build
+데이터베이스 설정
+Oracle 데이터베이스 설정을 application.yml 파일에서 확인하고, 필요한 테이블을 생성합니다.
+
+애플리케이션 실행 (Run the application)
+Spring Boot 애플리케이션을 실행합니다.
+
+
+./gradlew bootRun
+웹 브라우저에서 접속
+애플리케이션이 성공적으로 실행되면 웹 브라우저에서 http://localhost:8080을 통해 접속할 수 있습니다.
