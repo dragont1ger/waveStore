@@ -22,7 +22,7 @@
 
 - **프론트엔드**: HTML, CSS, JavaScript, Thymeleaf
 - **백엔드**: Java, Spring Boot, JPA
-- **데이터베이스**: MySQL / Oracle
+- **데이터베이스**: Oracle
 - **보안**: JWT (JSON Web Token), OAuth2 (소셜 로그인), BCrypt 암호화
 - **빌드 도구**: Gradle
 
